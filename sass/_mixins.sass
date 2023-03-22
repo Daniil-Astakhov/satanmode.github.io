@@ -1,0 +1,52 @@
+=btn_hover
+    &:hover
+        background-image: none
+        background-color: $blue
+
+=plus_before
+    &:before
+        display: block
+        content: ''
+        width: 14px
+        height: 2px
+        background-color: $blue
+        margin: center
+    &:after
+        display: block
+        position: absolute
+        content: ''
+        width: 2px
+        height: 14px
+        background-color: $blue
+        margin: center
+    &:hover
+        transition: 0.5s
+        &::before
+            transition: 0.5s
+            background-color: $demi_red  
+        &::after
+            transition: 0.5s
+            background-color: $demi_red 
+=hamburger
+    &:after
+        display: block
+        position: absolute
+        content: ''
+        width: 22px
+        height: 3px
+        margin: center
+        top: 20px
+        right: 30px
+        background-color: $white
+    &:hover
+        transition: 0.5s
+        &::before
+            transition: 0.5s
+            background-color: $demi_red  
+        &::after
+            transition: 0.5s
+            background-color: $demi_red 
+
+
+
+   
