@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Exchange</title>
+</head>
+<body class="body_black">
+    <div class="container">
+    <section class="currency">
+            <button class="switch__button_sun"></button>
+            <h1 class="title_black">Exchange Rates</h1>
+            <div class="currency__box">
+                    <div class="currency__box_item">
+                         <div class="subtitle">USD</div>
+                         <div class="currency__arrow_plus"></div>
+                         <div id="preusd" class="currency__previous"></div>
+                         <div id="usd" class="currency__box__current"></div>  
+                    </div>
+                    <div  class="currency__box_item">
+                        <div class="subtitle">EUR</div>
+                        <div class="currency__arrow_plus"></div>
+                        <div id="preeur" class="currency__previous"></div>
+                        <div id="eur" class="currency__box__current"></div>
+                    </div>
+                    <div  class="currency__box_item">
+                        <div class="subtitle">TL</div>
+                        <div class="currency__arrow_plus"></div>
+                        <div id="pretl" class="currency__previous"></div>
+                        <div id="tl" class="currency__box__current"></div>                      
+                    </div>
+                    <div  class="currency__box_item">
+                        <div class="subtitle">GBP</div>
+                        <div class="currency__arrow_plus"></div>
+                        <div id="pregbp" class="currency__previous"></div>
+                        <div id="gbp" class="currency__box__current"></div>                    
+                    </div>
+                    <div  class="currency__box_item">
+                        <div class="subtitle">GEL</div>
+                        <div class="currency__arrow_plus"></div>
+                        <div id="pregel" class="currency__previous"></div>
+                        <div id="gel" class="currency__box__current"></div>     
+                    </div>
+                    <div  class="currency__box_item">
+                        <div class="subtitle">AUD</div>
+                        <div class="currency__arrow_plus"></div>
+                        <div id="preaud" class="currency__previous"></div>
+                        <div id="aud" class="currency__box__current"></div>                        
+                    </div>
+                    <div  class="currency__box_item">
+                        <div class="subtitle">RSD</div>
+                        <div class="currency__arrow_plus"></div>
+                        <div id="prersd" class="currency__previous"></div>
+                        <div id="rsd" class="currency__box__current"></div>                        
+                    </div>
+                    <div  class="currency__box_item">
+                        <div class="subtitle">KZT</div>
+                        <div class="currency__arrow_plus"></div>
+                        <div id="prekzt" class="currency__previous"></div>
+                        <div id="kzt" class="currency__box__current"></div>                       
+                    </div>
+                    <div  class="currency__box_item">
+                        <div class="subtitle">KRW</div>
+                        <div class="currency__arrow_plus"></div>
+                        <div id="prekrw" class="currency__previous"></div>
+                        <div id="krw" class="currency__box__current"></div>                      
+                    </div>
+                </div>
+    </section>
+    <section id="calc" class="calc">
+        <h1 class="title_black">Calculator</h1>
+        <button class="buttonSwipe">To Exchange</button>
+        <div class="calc__result">
+            <form>
+                <input autocomplete="off" id="calc__result-submain" type="let" class="input" onfocus="this.value=''; currentInput = this;"><span class="submain calc__result-submain"></span><span class="odin">1</span>
+                <input autocomplete="off" id="calc__result-main" type="let" class="input" onfocus="this.value=''; currentInput = this;"><span class="main calc__result-main"></span>   
+            </form>       
+        </div>
+        <div class="calc__buttons">
+            <div id="1" class="calc__button">1</div>
+            <div id="2" class="calc__button">2</div>
+            <div id="3" class="calc__button">3</div>
+            <div id="4" class="calc__button">4</div>
+            <div id="5" class="calc__button">5</div>
+            <div id="6" class="calc__button">6</div>
+            <div id="7" class="calc__button">7</div>
+            <div id="8" class="calc__button">8</div>
+            <div id="9" class="calc__button">9</div>
+            <div id="." class="calc__button">.</div>
+            <div id="0" class="calc__button">0</div>
+            <div id="DEL" class="calc__button">DEL</div>
+        </div>      
+    </section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

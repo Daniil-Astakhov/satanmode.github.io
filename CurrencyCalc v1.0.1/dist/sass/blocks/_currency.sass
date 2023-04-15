@@ -1,0 +1,88 @@
+.currency
+    display: block
+    position: relative
+    &__arrow_minus
+        position: relative
+        top: 38%
+        &:after
+            content: ''
+            border-left: 8px solid transparent
+            border-right: 8px solid transparent
+            border-top: 10px solid #ff0909
+            rotate: 180deg
+    &__arrow_plus
+        position: relative
+        top: 5%
+        &:after
+            content: ''
+            border-left: 8px solid transparent
+            border-right: 8px solid transparent
+            border-bottom: 10px solid #09ff19
+    &__previous
+        position: relative
+        top: 5%
+        font-size: 15px     
+    &__box
+        display: grid
+        position: relative
+        justify-content: center
+        top: 50%
+        transform: translateY(-50%)
+        grid-template-columns: repeat(auto-fit, minmax(150px, 150px))
+        grid-template-rows: repeat(3, minmax(100px, auto))
+        grid-auto-rows: minmax(100px, auto)
+        gap: 10px
+        grid-auto-flow: dense
+        &_area
+            height: 150px
+            width: 150px
+        &__current
+            position: relative
+            top: -100%
+            height: 150px
+            text-align: center
+            line-height: 150px
+            transition: 0.1s all
+            box-shadow: 1px 1px 7px 7px #1a1a1acc
+            &:hover
+                cursor: pointer
+                box-shadow: 0px 0px 10px 4px #922487e5
+            &_active
+                box-shadow: 0px 0px 5px 5px #922487e5 inset
+                scale: 99%
+            &_wh
+                position: relative
+                top: -100%
+                height: 150px
+                text-align: center
+                line-height: 150px
+                transition: 0.1s all
+                box-shadow: 1px 1px 7px 7px #1a1a1acc
+                color: #060606e6
+                &:hover
+                    cursor: pointer
+                    box-shadow: 0px 0px 10px 4px #922487e5
+                &_active
+                    box-shadow: 0px 0px 6px 6px #000000e5 inset
+        &_item
+            width: 150px
+            height: 150px
+            line-height: 50px
+            font-size: 26px
+            border: 1px solid #000000
+            background: #0f0f0f14
+            border-radius: 3px
+            text-align: center
+            color: #f0f0f0e6
+            transition: 0.1s all
+            &_wh
+                color: #060606e6
+            
+            
+
+            
+            
+            
+
+                
+

@@ -1,0 +1,32 @@
+*
+    font-family: 'Kanit', sans-serif 
+body
+    -youbkit-touch-callout: none //Сафари для iOS
+    -youbkit-user-select: none  // Chrome 6.0+, Safari 3.1+, Edge и Opera 15+ 
+    -moz-user-select: none      // Fire Fox 
+    -ms-user-select: none       // IE 10+ и Edge 
+    user-select: none
+.body   
+    &_black
+        background: #171616ef
+    &_wh
+        background: #ffffffef
+.container
+    display: grid
+    max-width: 1140px
+    margin: 0 auto
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: 'currency calc'
+    transition: 1s all
+#currency
+    grid-area: currency
+#calc
+    grid-area: calc
+@import main/_animation
+@import blocks/_currency
+@import blocks/_titles
+@import blocks/_calc
+@import blocks/_sun
+@import blocks/_buttonSwipe
+@import main/_media
+

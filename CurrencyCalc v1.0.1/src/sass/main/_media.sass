@@ -1,0 +1,117 @@
+@media (max-width: 768px)
+    body
+        overflow-x: hidden
+    .container
+        display: grid
+        max-width: 768px
+        margin: 0 auto
+        grid-template-columns: 1fr 1fr
+        grid-template-areas: 'currency currency'
+    .switch 
+        display: none
+    .currency
+        display: block
+        width: 200%
+        overflow: 100%
+        .switch__button_sun
+            display: none
+        
+        .buttonSwipe
+            display: block
+        &__box
+            top: 45%
+            grid-template-rows: repeat(1, minmax(50px, auto))
+            grid-auto-rows: minmax(50px, auto)
+    .calc
+        display: none
+        position: relative
+        width: 200%
+        .title_black
+            display: none
+        .buttonSwipe
+            display: block
+            margin: 20px 0 50px 10px
+            right: 0
+        .odin
+            display: none
+            left: 49%
+            position: absolute
+            top: 108px
+            font-size: 18px
+        &__result
+            &-submain
+                pointer-events: none
+            &-main
+                pointer-events: none
+            .submain
+                display: inline-block
+                position: relative
+                left: 60%
+                top: -37px
+                color: #f0f0f0e6
+            .main
+                display: inline-block
+                position: relative
+                left: 60%
+                top: -37px
+                color: #f0f0f0e6
+@media (max-width: 576px)
+    body
+        overflow-x: hidden
+    .container
+        display: grid
+        max-width: 200%
+        margin: 0 auto
+        grid-template-columns: 1fr 1fr
+        grid-template-areas: 'currency currency'
+    .switch 
+        display: none
+    .currency
+        display: block
+        width: 200%
+        overflow: 100%
+        &__box
+            grid-template-rows: repeat(1, minmax(50px, auto))
+            grid-auto-rows: minmax(50px, auto)
+    .calc
+        display: none
+        position: relative
+        width: 200%
+        &__result
+            &-submain
+                pointer-events: none
+            &-main
+                pointer-events: none
+            .submain
+                display: inline-block
+                position: relative
+                left: 62%
+                top: -37px
+                color: #f0f0f0e6
+            .main
+                display: inline-block
+                position: relative
+                left: 62%
+                top: -37px
+                color: #f0f0f0e6
+@media (max-width: 475px)
+    .calc
+        &__result
+            &-submain
+                pointer-events: none
+            &-main
+                pointer-events: none
+            .submain
+                display: inline-block
+                position: relative
+                left: 67%
+                top: -37px
+                color: #f0f0f0e6
+            .main
+                display: inline-block
+                position: relative
+                left: 67%
+                top: -37px
+                color: #f0f0f0e6
+        
+        
